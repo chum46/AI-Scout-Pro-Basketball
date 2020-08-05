@@ -1,6 +1,8 @@
 # Data
 *.csv
 *.zip
+*.db
+*.xlsx
 
 # DS_Store
 *.DS_Store
