@@ -62,14 +62,14 @@ Full documentation for managing conda environments can be found [`here`](https:/
 
 #### 2. Download Datasets
 The following datasets will be used for modeling:
-- NBA Advanced Metrics from FiveThirtyEight (csv) 
+**- NBA Advanced Metrics from FiveThirtyEight (csv)** 
     - Publicly available: [`repository link`](https://github.com/fivethirtyeight/nba-player-advanced-metrics)
     - Clone repo into the [`data`](/data) folder in this projects main directory.
     ```bash
     # navigate to the data folder and run
     git clone https://github.com/fivethirtyeight/nba-player-advanced-metrics.git
     ```
-- NCAA Dataset was provided with written permission from [barttorvik.com](https://barttorvik.com) (csv)
+**- NCAA Dataset was provided with written permission from [barttorvik.com](https://barttorvik.com) (csv)**
     - In order to work with the data on the site without the need to scrape, get in touch with him [`via twitter`](https://twitter.com/totally_t_bomb) direct message and explain what you will be using it for. If approved, he will provide instructions for obtaining the necessary data. 
     — Follow the provided instructions to create a dataset with the following filters:
         - data from 2008-2019
@@ -116,7 +116,7 @@ We'll use historical college statistics of our newly classified modern nba playe
 
 ## Results
 
-1. Positionality Exploration Across Eras
+**1. Positionality Exploration Across Eras**
     a. Build
     b. Evaluate
     
@@ -156,18 +156,18 @@ We'll use historical college statistics of our newly classified modern nba playe
 | weighted avg | 0.69 | 0.7 | 0.69 | 4408 |
 
 
-2. Clustering
+**2. Clustering**
 
-    a. Scale Data
-    b. Dimensionality Reduction
-    c. Feature Consolidation
-    d. Build
-    e. Evaluate
+a. Scale Data
+b. Dimensionality Reduction
+c. Feature Consolidation
+d. Build
+e. Evaluate
+
+<img src="reports/figures/silouette_score.png" alt="drawing" width="300"/> 
+<img src="reports/figures/gmm_clusters.png" alt="drawing" width="600"/>
     
-    <img src="reports/figures/silouette_score.png" alt="drawing" width="300"/> 
-    <img src="reports/figures/gmm_clusters.png" alt="drawing" width="600"/>
-    
-3. Label Identification and Understanding
+**3. Label Identification and Understanding**
 
 *C0*:
 Two-way long distance shooters, generally not the first scoring option, but accurate from deep.
@@ -217,7 +217,7 @@ Traditional center mold, or PF without range, but a knack for scoring around the
 
 <img src="reports/figures/cluster5.png" alt="drawing" width="600"/>
 
-4. Prediction Model
+**4. Prediction Model**
     
 *Work in Progress*
 
