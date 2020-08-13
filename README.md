@@ -1,4 +1,4 @@
-# AI Scout: Modernizing Pro-Basketball Draft and Developmental Decisions with Machine Learning
+# A.I. Scout: Modernizing Pro-Basketball Draft and Developmental Decisions with Machine Learning
 
 ## Table of Contents
 
