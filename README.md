@@ -120,7 +120,9 @@ We'll use historical college statistics of our newly classified modern nba playe
 ## Results
 
 **1. Positionality Exploration Across Eras**
+
     a. Build
+    
     b. Evaluate
     
 *90's Era*
@@ -161,11 +163,7 @@ We'll use historical college statistics of our newly classified modern nba playe
 
 **2. Clustering**
 
-a. Scale Data
-b. Dimensionality Reduction
-c. Feature Consolidation
-d. Build
-e. Evaluate
+Unsupervised clustering was used to generate modern player types. 
 
 <img src="reports/figures/silouette_score.png" alt="drawing" width="300"/> 
 <img src="reports/figures/gmm_clusters.png" alt="drawing" width="600"/>
@@ -213,7 +211,7 @@ Build your team around superstars
 <img src="reports/figures/cluster4.png" alt="drawing" width="600"/>
 
 *C5*:
-Traditional center mold, or PF without range, but a knack for scoring around the rim. Rebounders. 
+Traditional center mold, or PF without range, but a knack for scoring around the rim. Rebounders. Likely your team's most impactful defender. 
 - Dwight Howard
 - Rudy Gobert
 - Tyson Chandler
