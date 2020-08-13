@@ -44,7 +44,7 @@
  - [presentation.pdf](https://github.com/chum46/AI-Scout-Pro-Basketball/blob/master/reports/presentation.pdf)
  - [/reports](https://github.com/chum46/AI-Scout-Pro-Basketball/tree/master/reports) - contains the final notebook that describes our findings
  - [/notebooks](https://github.com/chum46/AI-Scout-Pro-Basketball/tree/master/notebooks) - contains step by step descriptions of our process including data exploration and model iterations
- - [/src](https://github.com/chum46/AI-Scout-Pro-Basketball/tree/master/src) - contains all scripts that are used in the `notebooks/` and `reports/` files
+ - [/src](https://github.com/chum46/AI-Scout-Pro-Basketball/tree/master/src) - contains all scripts that are used in the `/notebooks` and `/reports` files
  
 ## General Setup Instructions 
 
@@ -120,9 +120,7 @@ We'll use historical college statistics of our newly classified modern nba playe
 ## Results
 
 **1. Positionality Exploration Across Eras**
-
     a. Build
-    
     b. Evaluate
     
 *90's Era*
