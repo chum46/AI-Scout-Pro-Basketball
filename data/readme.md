@@ -1,10 +1,12 @@
 # Statistical Category Descriptions
 
+#### Glossary:
+For detailed category descriptions:
+- https://www.basketball-reference.com/about/glossary.html
 
-## NBA Player Advanced Metrics
-Historical RAPTOR and other NBA data.
 Source: https://github.com/fivethirtyeight/nba-player-advanced-metrics
 
+## NBA Advanced Metrics
 
 |  Category   |                    Description                    |
 |-------------|---------------------------------------------------|
@@ -50,3 +52,31 @@ Source: https://github.com/fivethirtyeight/nba-player-advanced-metrics
 | FTAr        | FTA/FGA                                           |
 
 ## NCAA College Basketball Metrics
+
+See `Glossary` above for descriptions
+| Category |
+|-|
+| O-Rating |
+| Usage |
+| eFG% |
+| TS% |
+| O-Reb% |
+| D-Reb% |
+| Ast% |
+| TO % |
+| A/TO |
+| Blk % |
+| Stl % |
+| FTR |
+| Far 2 Made |
+| Far 2 Atts |
+| Far 2 % |
+| FTM |
+| FTA |
+| FT% |
+| 2PM |
+| 2PA |
+| 2P% |
+| 3PM |
+| 3PA |
+| 3P% |
