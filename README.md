@@ -121,7 +121,8 @@ We'll use historical college statistics of our newly classified modern nba playe
     b. Evaluate
     
     *90's Era*
-    <img src="reports/figures/90s_cm_final.png" alt="drawing" width="600"/> 
+    
+    <img src="reports/figures/90s_cm_final.png" alt="drawing" width="300"/> 
     |  | precision | recall | f1-score | support |
     |-|-|-|-|-|
     |  |  |  |  |  |
@@ -136,7 +137,8 @@ We'll use historical college statistics of our newly classified modern nba playe
     | weighted avg | 0.76 | 0.76 | 0.76 | 3003 |
     
     *Modern Era*
-    <img src="reports/figures/mod_cm_final.png" alt="drawing" width="600"/> 
+    
+    <img src="reports/figures/mod_cm_final.png" alt="drawing" width="300"/> 
     |  | precision | recall | f1-score | support |
     |-|-|-|-|-|
     |  |  |  |  |  |
@@ -156,7 +158,7 @@ We'll use historical college statistics of our newly classified modern nba playe
     c. Feature Consolidation
     d. Build
     e. Evaluate
-    <img src="reports/figures/silouette_score.png" alt="drawing" width="600"/> 
+    <img src="reports/figures/silouette_score.png" alt="drawing" width="300"/> 
     <img src="reports/figures/gmm_clusters.png" alt="drawing" width="600"/>
     
 3. Label Identification and Understanding
