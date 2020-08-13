@@ -120,9 +120,9 @@ We'll use historical college statistics of our newly classified modern nba playe
     a. Build
     b. Evaluate
     
-    *90's Era*
+*90's Era*
     
-    <img src="reports/figures/90s_cm_final.png" alt="drawing" width="300"/> 
+<img src="reports/figures/90s_cm_final.png" alt="drawing" width="300"/> 
 
 |  | precision | recall | f1-score | support |
 |-|-|-|-|-|
@@ -218,8 +218,6 @@ Traditional center mold, or PF without range, but a knack for scoring around the
 <img src="reports/figures/cluster5.png" alt="drawing" width="600"/>
 
 4. Prediction Model
-    a. Build
-    b. Evaluate
     
 *Work in Progress*
 
