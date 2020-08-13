@@ -82,7 +82,7 @@ The following datasets will be used for modeling:
 - Store csv in the [`data`](/data) folder in this projects main directory
 
 #### 3. Create `sqlite3` Database
-Instructions can be found in the `create_database` notebook. This database will be used for accessing and saving datasets.
+Instructions can be found in the `00_create_database` notebook. This database will be used for accessing and saving datasets.
 
 
 ## Context
@@ -163,7 +163,7 @@ We'll use historical college statistics of our newly classified modern nba playe
 
 **2. Clustering**
 
-Unsupervised clustering was used to generate modern player types. 
+Unsupervised clustering was used to generate 6 modern player types. Below you'll see the Silouette Score peak at 6 clusters which was the basis of this determination. 
 
 <img src="reports/figures/silouette_score.png" alt="drawing" width="300"/> 
 <img src="reports/figures/gmm_clusters.png" alt="drawing" width="600"/>
