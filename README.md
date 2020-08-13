@@ -44,7 +44,7 @@
  - [presentation.pdf](https://github.com/chum46/AI-Scout-Pro-Basketball/blob/master/reports/presentation.pdf)
  - [/reports](https://github.com/chum46/AI-Scout-Pro-Basketball/tree/master/reports) - contains the final notebook that describes our findings
  - [/notebooks](https://github.com/chum46/AI-Scout-Pro-Basketball/tree/master/notebooks) - contains step by step descriptions of our process including data exploration and model iterations
- - [/src](https://github.com/chum46/AI-Scout-Pro-Basketball/tree/master/src) - contains all scripts that are used in the notebooks/ and reports/ files
+ - [/src](https://github.com/chum46/AI-Scout-Pro-Basketball/tree/master/src) - contains all scripts that are used in the `notebooks/` and `reports/` files
  
 ## General Setup Instructions 
 
@@ -62,13 +62,16 @@ Full documentation for managing conda environments can be found [`here`](https:/
 
 #### 2. Download Datasets
 The following datasets will be used for modeling:
+
 **- NBA Advanced Metrics from FiveThirtyEight (csv)** 
     - Publicly available: [`repository link`](https://github.com/fivethirtyeight/nba-player-advanced-metrics)
     - Clone repo into the [`data`](/data) folder in this projects main directory.
+    
     ```bash
     # navigate to the data folder and run
     git clone https://github.com/fivethirtyeight/nba-player-advanced-metrics.git
     ```
+    
 **- NCAA Dataset was provided with written permission from [barttorvik.com](https://barttorvik.com) (csv)**
     - In order to work with the data on the site without the need to scrape, get in touch with him [`via twitter`](https://twitter.com/totally_t_bomb) direct message and explain what you will be using it for. If approved, he will provide instructions for obtaining the necessary data. 
     — Follow the provided instructions to create a dataset with the following filters:
