@@ -123,67 +123,82 @@ We'll use historical college statistics of our newly classified modern nba playe
     *90's Era*
     
     <img src="reports/figures/90s_cm_final.png" alt="drawing" width="300"/> 
-    |  | precision | recall | f1-score | support |
-    |-|-|-|-|-|
-    |  |  |  |  |  |
-    | C | 0.82 | 0.87 | 0.85 | 450 |
-    | PF | 0.77 | 0.76 | 0.77 | 632 |
-    | PG | 0.88 | 0.89 | 0.88 | 662 |
-    | SF | 0.69 | 0.61 | 0.65 | 637 |
-    | SG | 0.65 | 0.71 | 0.68 | 622 |
-    |  |  |  |  |  |
-    | accuracy |  |  | 0.76 | 3003 |
-    | macro avg | 0.76 | 0.77 | 0.77 | 3003 |
-    | weighted avg | 0.76 | 0.76 | 0.76 | 3003 |
-    
-    *Modern Era*
-    
-    <img src="reports/figures/mod_cm_final.png" alt="drawing" width="300"/> 
-    |  | precision | recall | f1-score | support |
-    |-|-|-|-|-|
-    |  |  |  |  |  |
-    | C | 0.76 | 0.86 | 0.81 | 858 |
-    | PF | 0.65 | 0.53 | 0.58 | 890 |
-    | PG | 0.82 | 0.89 | 0.86 | 861 |
-    | SF | 0.58 | 0.48 | 0.53 | 827 |
-    | SG | 0.65 | 0.71 | 0.67 | 972 |
-    |  |  |  |  |  |
-    | accuracy |  |  | 0.7 | 4408 |
-    | macro avg | 0.69 | 0.7 | 0.69 | 4408 |
-    | weighted avg | 0.69 | 0.7 | 0.69 | 4408 |
 
-2. Clustering 
+|  | precision | recall | f1-score | support |
+|-|-|-|-|-|
+|  |  |  |  |  |
+| C | 0.82 | 0.87 | 0.85 | 450 |
+| PF | 0.77 | 0.76 | 0.77 | 632 |
+| PG | 0.88 | 0.89 | 0.88 | 662 |
+| SF | 0.69 | 0.61 | 0.65 | 637 |
+| SG | 0.65 | 0.71 | 0.68 | 622 |
+|  |  |  |  |  |
+| accuracy |  |  | 0.76 | 3003 |
+| macro avg | 0.76 | 0.77 | 0.77 | 3003 |
+| weighted avg | 0.76 | 0.76 | 0.76 | 3003 |
+
+    
+*Modern Era*
+    
+<img src="reports/figures/mod_cm_final.png" alt="drawing" width="300"/> 
+
+|  | precision | recall | f1-score | support |
+|-|-|-|-|-|
+|  |  |  |  |  |
+| C | 0.76 | 0.86 | 0.81 | 858 |
+| PF | 0.65 | 0.53 | 0.58 | 890 |
+| PG | 0.82 | 0.89 | 0.86 | 861 |
+| SF | 0.58 | 0.48 | 0.53 | 827 |
+| SG | 0.65 | 0.71 | 0.67 | 972 |
+|  |  |  |  |  |
+| accuracy |  |  | 0.7 | 4408 |
+| macro avg | 0.69 | 0.7 | 0.69 | 4408 |
+| weighted avg | 0.69 | 0.7 | 0.69 | 4408 |
+
+
+2. Clustering
+
     a. Scale Data
     b. Dimensionality Reduction
     c. Feature Consolidation
     d. Build
     e. Evaluate
+    
     <img src="reports/figures/silouette_score.png" alt="drawing" width="300"/> 
     <img src="reports/figures/gmm_clusters.png" alt="drawing" width="600"/>
     
 3. Label Identification and Understanding
+
 *C0*:
 Two-way long distance shooters, generally not the first scoring option, but accurate from deep.
 - Ray Allen
 - Danny Green
 - JJ Redick
 - Kyle Korver
+
 <img src="reports/figures/cluster0.png" alt="drawing" width="600"/>
+
 *C1*:
 Perimeter role player, 3pt spot up shooters, defensive liability
+
 <img src="reports/figures/cluster1.png" alt="drawing" width="600"/>
+
 *C2*:
 Close to the rim, defensive minded bigs. No outside shot, but can get to the free throw line. C5 Backup.
 - Kendrick Perkins
 - Ben Wallace
+
 <img src="reports/figures/cluster2.png" alt="drawing" width="600"/>
+
 *C3*:
 Versatile sharp-shooters, generally a higher % of shots come from long-distance. C4 potential but can be lacking on defense. Can create offense for themselves and teammates. Poor man's C4. 
 - Kyle Lowry
 - Jamal Crawford
 - Deron Williams
 - Tony Parker
+
 <img src="reports/figures/cluster3.png" alt="drawing" width="600"/>
+
 *C4*:
 No weakness, 2-way players, create offense for themselves and teammates. 1st option, max contract players. 
 Build your team around superstars
@@ -191,16 +206,21 @@ Build your team around superstars
 - Lebron
 - Nikola Jokic
 - Kevin Durant
+
 <img src="reports/figures/cluster4.png" alt="drawing" width="600"/>
+
 *C5*:
 Traditional center mold, or PF without range, but a knack for scoring around the rim. Rebounders. 
 - Dwight Howard
 - Rudy Gobert
 - Tyson Chandler
+
 <img src="reports/figures/cluster5.png" alt="drawing" width="600"/>
+
 4. Prediction Model
     a. Build
     b. Evaluate
+    
 *Work in Progress*
 
 ## Business recommendations
