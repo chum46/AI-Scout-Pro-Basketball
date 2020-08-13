@@ -10,7 +10,7 @@
  * [Data](https://github.com/chum46/AI-Scout-Pro-Basketball#data)
  * [Results](https://github.com/chum46/AI-Scout-Pro-Basketball#results)
  * [Recommendations](https://github.com/chum46/AI-Scout-Pro-Basketball#business-recommendations)
- * [Future Improvements](https://github.com/chum46/AI-Scout-Pro-Basketball#future-improvements)`
+ * [Future Improvements](https://github.com/chum46/AI-Scout-Pro-Basketball#future-improvements)
 <!--te-->
 
 ## Files and Folders of Note
