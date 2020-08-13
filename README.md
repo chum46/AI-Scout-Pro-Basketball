@@ -75,9 +75,11 @@ The following datasets will be used for modeling:
 **- NCAA Dataset was provided with written permission from [barttorvik.com](https://barttorvik.com) (csv)**
     - In order to work with the data on the site without the need to scrape, get in touch with him [`via twitter`](https://twitter.com/totally_t_bomb) direct message and explain what you will be using it for. If approved, he will provide instructions for obtaining the necessary data. 
     — Follow the provided instructions to create a dataset with the following filters:
-        - data from 2008-2019
-        - drafted = True
-    - Store csv in the [`data`](/data) folder in this projects main directory
+        
+* data from 2008-2019
+* drafted = True
+        
+- Store csv in the [`data`](/data) folder in this projects main directory
 
 #### 3. Create `sqlite3` Database
 Instructions can be found in the `create_database` notebook. This database will be used for accessing and saving datasets.
