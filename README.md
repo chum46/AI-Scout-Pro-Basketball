@@ -9,8 +9,8 @@
  * [Goals](https://github.com/chum46/AI-Scout-Pro-Basketball#goals)
  * [Data](https://github.com/chum46/AI-Scout-Pro-Basketball#data)
  * [Results](https://github.com/chum46/AI-Scout-Pro-Basketball#results)
- * [Next Steps](https://github.com/chum46/AI-Scout-Pro-Basketball#next-steps)
- * [Sources](https://github.com/chum46/AI-Scout-Pro-Basketball#Sources)
+ * [Recommendations](https://github.com/chum46/AI-Scout-Pro-Basketball#business-recommendations)
+ * [Future Improvements](https://github.com/chum46/AI-Scout-Pro-Basketball#future-improvements)
 <!--te-->
 
 ## Files and Folders of Note
@@ -18,35 +18,26 @@
 .
 ├── README.md
 ├── data
-├── environment.yml
+│   └── readme.md
 ├── notebooks
-│   ├── exploratory
-│   │   ├── 01_mef_base_model.ipynb
-│   │   ├── 02_lime_explanation_template.ipynb
-│   │   ├── 03_intermediate_activations_template.ipynb
-│   │   ├── 04_convolutional_model.ipynb
-│   │   ├── 05_jw_transfer_learning.ipynb
-│   │   ├── 06_jw_iterations.ipynb
-│   │   ├── 07_jw_best_model.ipynb
-│   │   └── fsm_model.pickle
-│   └── report
-│       └── final_notebook.ipynb
-├── references
-│   ├── PIIS0092867418301545.pdf
-│   ├── person109_bacteria_519.jpeg
-│   └── person3_virus_15.jpeg
+│   ├── exploratory
+│   │   ├── FSM.ipynb
+│   │   ├── cluster_exploration.ipynb
+│   │   ├── label_clusters3.ipynb
+│   │   ├── label_clusters4.ipynb
+│   │   ├── load_data.ipynb
+│   │   └── readme.md
+│   └── report
+│       ├── final_notebook.ipynb
+│       └── readme.md
 ├── reports
-│   ├── figures
-│   │   ├── Results_AUC_ROC.png
-│   │   ├── after_cleaning.png
-│   │   ├── before_cleaning.png
-│   │   ├── data_cleaning.png
-│   │   └── model_comparison.png
-│   └── presentation
-│       └── x_ray_classification.pdf
+│   ├── figures
+│   └── presentation.pdf
 └── src
-    ├── functions.py
-    └── lime_functions.py
+    ├── cluster_functions.py
+    ├── data_cleaning.py
+    ├── model_functions.py
+    └── prediction_functions.py
 ```
 #### Repo Navigation Links
 
@@ -71,14 +62,14 @@ Full documentation for managing conda environments can be found [`here`](https:/
 
 #### 2. Download Datasets
 The following datasets will be used for modeling:
-1. NBA Advanced Metrics from FiveThirtyEight (csv) 
+- NBA Advanced Metrics from FiveThirtyEight (csv) 
     - Publicly available: [`repository link`](https://github.com/fivethirtyeight/nba-player-advanced-metrics)
     - Clone repo into the [`data`](/data) folder in this projects main directory.
     ```bash
     # navigate to the data folder and run
     git clone https://github.com/fivethirtyeight/nba-player-advanced-metrics.git
     ```
-2. NCAA Dataset was provided with written permission from [barttorvik.com](https://barttorvik.com) (csv)
+- NCAA Dataset was provided with written permission from [barttorvik.com](https://barttorvik.com) (csv)
     - In order to work with the data on the site without the need to scrape, get in touch with him [`via twitter`](https://twitter.com/totally_t_bomb) direct message and explain what you will be using it for. If approved, he will provide instructions for obtaining the necessary data. 
     — Follow the provided instructions to create a dataset with the following filters:
         - data from 2008-2019
@@ -92,8 +83,7 @@ Instructions can be found in the `create_database` notebook. This database will 
 ## Context
 The new era of the NBA requires versatility to win: 
 
-"I don’t have the five positions anymore. It may be as simple as three positions now, where you’re either a ball-handler, a wing or a big. It's really important. We've become more versatile as the years have gone on."
-- Celtics coach Brad Stevens said, per Kareem Copeland of the Associated Press.
+"I don’t have the five positions anymore. It may be as simple as three positions now, where you’re either a ball-handler, a wing or a big. It's really important. We've become more versatile as the years have gone on." Celtics coach Brad Stevens, per Kareem Copeland of the Associated Press.
 
 Even within a position, players can serve significantly different roles. The Warriors have inspired 'small ball', emphasizing movement and quick transition offense. On the other side of the spectrum, teams like Denver are building around Nikola Jokic, a 'big' listed at 7’0 and 250 pounds. This seems to harken back to a bygone era of the need for a dominant big man, but the comparison gets murky with his ability to shoot the three, average a double-double while ranking in the top 10 in assist percentage. 
 
