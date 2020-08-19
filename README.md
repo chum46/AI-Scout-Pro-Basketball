@@ -82,7 +82,7 @@ The following datasets will be used for modeling:
 - Store csv in the [`data`](/data) folder in this projects main directory
 
 #### 3. Create `sqlite3` Database
-Instructions can be found in the [`00_create_database`]() notebook. This database will be used for accessing and saving datasets.
+Instructions can be found in the [`00_create_database`](https://github.com/chum46/AI-Scout-Pro-Basketball/blob/master/notebooks/exploratory/00_create_database.ipynb) notebook. This database will be used for accessing and saving datasets.
 
 ## Context
 The new era of the NBA requires versatility to win: 
