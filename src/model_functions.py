@@ -14,7 +14,7 @@ from sklearn.model_selection import cross_val_score
 
 
 def lrm(X, y, rs):
-    X_train, X_test, y_train, y_test = train_test_split(X, y, random_state=rs)
+    X_train, X_test, y_train, y_test = train_test_split(X, y, stratify=y, random_state=rs)
     
     # Instantiate the model
     lr = LogisticRegression(fit_intercept=False, C=1e12, solver='liblinear')
@@ -28,21 +28,20 @@ def lrm(X, y, rs):
     y_hat_test_proba = lr.predict_proba(X_test)
     return lr, X_test, y_test, y_hat_test, y_hat_test_proba
     
-def show_cm(cnf_matrix, y):
+def show_cm(cnf_matrix, class_names):
     recall = np.diag(cnf_matrix) / np.sum(cnf_matrix, axis = 1)
     precision = np.diag(cnf_matrix) / np.sum(cnf_matrix, axis = 0)
     
     plt.imshow(cnf_matrix,  cmap=plt.cm.Blues) 
 
     # Add title and axis labels
-    plt.title('Confusion Matrix')
-    plt.ylabel('True Position')
-    plt.xlabel('Predicted Position')
+    plt.title('Confusion Matrix', fontsize = 24)
+    plt.ylabel('True Outcome', fontsize = 20)
+    plt.xlabel('Predicted Outcome', fontsize = 20)
 
-    class_names = set(y) 
     tick_marks = np.arange(len(class_names))
-    plt.xticks(tick_marks, class_names, rotation=45)
-    plt.yticks(tick_marks, class_names)
+    plt.xticks(tick_marks, class_names, rotation=45, fontsize = 14)
+    plt.yticks(tick_marks, class_names, fontsize = 14)
 
     thresh = cnf_matrix.max() / 2.  
     for i, j in itertools.product(range(cnf_matrix.shape[0]), range(cnf_matrix.shape[1])):
@@ -51,7 +50,7 @@ def show_cm(cnf_matrix, y):
                      color='white' if cnf_matrix[i, j] > thresh else 'black')
     plt.colorbar()
     plt.show()
-    print(' recall: ', np.mean(recall), '\n', 'precision: ', np.mean(precision))
+#     print(' recall: ', np.mean(recall), '\n', 'precision: ', np.mean(precision))
     return np.mean(recall), np.mean(precision)
 
 # def cv_score(X, y, rs):
