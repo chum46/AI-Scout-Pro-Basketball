@@ -218,7 +218,7 @@ Traditional center mold, or PF without range, but a knack for scoring around the
 <img src="reports/figures/cluster5.png" alt="drawing" width="600"/>
 
 **4. Prediction Model**
-For the prediction model I ran three logistic regression iterations to predict whether or not a player would be a superstar based on their college statistics. Below are the results. The balanced locistic regression model performed the best. 
+For the prediction model I ran three logistic regression iterations to predict whether or not a player would be a superstar based on their college statistics. Below are the results. The balanced logistic regression model performed the best. 
 
 <img src="reports/figures/roc_curve.png" alt="drawing" width="600"/>
 
