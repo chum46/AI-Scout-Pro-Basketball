@@ -232,6 +232,7 @@ Scouts and front office executives can use this this tool for the following purp
  
 ## Future Improvements:
  - Include international player statistics
+ - Create a Neural Network prediction model
  - Explore additional clustering and dimensionality reduction methods 
  - Create a web application for clients using Flask or Dash
  
